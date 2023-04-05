@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Química</title>
+</head>
+<body>
+    <div class="menu">
+        <p>trabalho de quimica</p>
+    </div>
+</body>
+<section>
+    <div class="title">
+        <p>reação</p>
+    </div>
+    <div class="ler">
+        <p>Reações de neutrazalição são reações químicas que ocorem quando uma substância</p>
+        <p>ácida reage com uma substância básica, tendo a água como um dos produtos. A </p>
+        <p>compreensão desse processo químico se deve ao cientista sueco Svante Arrhenius. Essas </p>
+        <p>reações podem ser totais ou parciais.</p>
+    </div>
+    <div class="imagem">
+        <img src="images (2).png">
+    </div>
+</section>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #151320;
+        }
+
+        .menu {
+            position: relative;
+            width: 96%;
+            height: 200px;
+            color: azure;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+            top: 45px;
+            left: 25px;
+            font: bold 2em 'Century Gothic';
+            text-transform: uppercase;
+        }
+
+        .menu::before, .menu::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: calc(100% + 30px);
+            height: calc(100% + 30px);
+            background: linear-gradient(45deg, #34094d, #0010f7, #ff0000, #3700ff, #00ffff, #34094d, #0011ff, #ff0000, #001aff, #0099ff);
+            background-size: 300%;
+            border-radius: 8px;
+            animation: AnimaBorda 5s linear alternate infinite;
+        }
+
+        @keyframes AnimaBorda {
+            0% {
+                background-position: 0;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+
+        .menu::after {
+            filter: blur(20px);
+        }
+
+        section {
+            position: relative;
+            top: 120px;
+            width: 300px;
+            height: 275px;
+            left: 30px
+        }
+
+        .title {
+            border-radius: 2px;
+            font: bold 1.4em 'Century Gothic';
+        }
+
+        .title p {
+            font-size: 3em;
+            position: relative;
+            border-radius: 3px;
+            color: azure;
+        }
+
+        .ler {
+            position: relative;
+            top: 20px;
+        }
+
+        .ler p{
+            font-size: 1.2em;
+            display: flex;
+            color: rgb(219, 247, 247);
+        }
+
+        .imagem {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -200px;
+            left: 600px;
+            background: black;
+            height: 225px;
+            width: 225px;
+            border-radius: 2px;
+        }
+
+        .imagem::before, .imagem::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            background: linear-gradient(45deg, #34094d, #0010f7, #ff0000, #3700ff, #00ffff, #34094d, #0011ff, #ff0000, #001aff, #0099ff);
+            background-size: 300%;
+            border-radius: 9px;
+            animation: AnimaBorda 5s linear alternate infinite;
+        }
+
+        .imagem img {
+            border-radius: 4px;
+        }
+
+    </style> 
+</html>
